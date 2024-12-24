@@ -3,6 +3,7 @@ typer[all]
 rich
 python-dotenv
 loguru
+pytubefix
 openai
 crewai[tools]
 crewai_tools
