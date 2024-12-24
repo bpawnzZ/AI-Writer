@@ -42,3 +42,4 @@ xmlschema
 moviepy
 googlesearch-python
 streamlit-aggrid
+pysqlite3
