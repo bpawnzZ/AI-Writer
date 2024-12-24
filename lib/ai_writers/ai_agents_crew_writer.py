@@ -178,4 +178,3 @@ def ai_agents_writers(search_keywords, lang="en"):
         st.download_button('Download Content', data=result, file_name='alwrity_result.md')
     except Exception as err:
         st.error(f"Failed to execute tasks: {err}")
-

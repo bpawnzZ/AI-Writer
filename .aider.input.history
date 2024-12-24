@@ -1,0 +1,83 @@
+
+# 2024-12-24 09:26:18.385181
++ImportError: cannot import name 'setup_ui' from 'lib.utils.ui_setup' (/home/insomnia/git/AI-Writer/lib/utils/ui_setup.py)
++Traceback:
++File "/home/insomnia/git/AI-Writer/alwrity.py", line 8, in <module>
++    from lib.utils.ui_setup import setup_ui
+
+# 2024-12-24 09:27:36.896175
++ImportError: cannot import name 'AnthropicMessageRequestBase' from 'litellm.types.llms.anthropic' (/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/types/llms/anthropic.py)
++Traceback:
++File "/home/insomnia/git/AI-Writer/alwrity.py", line 8, in <module>
++    from lib.utils.ui_setup import setup_ui, setup_tabs  # Combined imports
++    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++File "/home/insomnia/git/AI-Writer/lib/utils/ui_setup.py", line 4, in <module>
++    from .content_generators import content_planning_tools, ai_writers
++File "/home/insomnia/git/AI-Writer/lib/utils/content_generators.py", line 2, in <module>
++    from lib.utils.alwrity_utils import (
++File "/home/insomnia/git/AI-Writer/lib/utils/alwrity_utils.py", line 11, in <module>
++    from lib.ai_writers.ai_agents_crew_writer import ai_agents_writers
++File "/home/insomnia/git/AI-Writer/lib/ai_writers/ai_agents_crew_writer.py", line 4, in <module>
++    from crewai import Agent, Task, Crew
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/__init__.py", line 3, in <module>
++    from crewai.agent import Agent
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/agent.py", line 6, in <module>
++    from crewai.agents import CacheHandler
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/agents/__init__.py", line 2, in <module>
++    from .parser import CrewAgentParser
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/agents/parser.py", line 5, in <module>
++    from crewai.utilities import I18N
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/utilities/__init__.py", line 4, in <module>
++    from .internal_instructor import InternalInstructor
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/utilities/internal_instructor.py", line 4, in <module>
++    from litellm import completion
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/__init__.py", line 895, in <module>
++    from .llms.anthropic.chat import AnthropicConfig
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/llms/anthropic/chat/__init__.py", line 1, in <module>
++    from .handler import AnthropicChatCompletion, ModelResponseIterator
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/llms/anthropic/chat/handler.py", line 51, in <module>
++    from .transformation import AnthropicConfig
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/llms/anthropic/chat/transformation.py", line 6, in <module>
++    from litellm.types.llms.anthropic import (
+
+# 2024-12-24 09:28:52.855250
++ImportError: cannot import name 'AnthropicMessageRequestBase' from 'litellm.types.llms.anthropic' (/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/types/llms/anthropic.py)
++Traceback:
++
++File "/home/insomnia/git/AI-Writer/alwrity.py", line 8, in <module>
++    from lib.utils.ui_setup import setup_ui, setup_tabs  # Combined imports
++    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++File "/home/insomnia/git/AI-Writer/lib/utils/ui_setup.py", line 4, in <module>
++    from .content_generators import content_planning_tools, ai_writers
++File "/home/insomnia/git/AI-Writer/lib/utils/content_generators.py", line 2, in <module>
++    from lib.utils.alwrity_utils import (
++File "/home/insomnia/git/AI-Writer/lib/utils/alwrity_utils.py", line 11, in <module>
++    from lib.ai_writers.ai_agents_crew_writer import ai_agents_writers
++File "/home/insomnia/git/AI-Writer/lib/ai_writers/ai_agents_crew_writer.py", line 4, in <module>
++    from crewai import Agent, Task, Crew
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/__init__.py", line 3, in <module>
++    from crewai.agent import Agent
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/agent.py", line 6, in <module>
++    from crewai.agents import CacheHandler
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/agents/__init__.py", line 2, in <module>
++    from .parser import CrewAgentParser
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/agents/parser.py", line 5, in <module>
++    from crewai.utilities import I18N
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/utilities/__init__.py", line 4, in <module>
++    from .internal_instructor import InternalInstructor
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/crewai/utilities/internal_instructor.py", line 4, in <module>
++    from litellm import completion
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/__init__.py", line 895, in <module>
++    from .llms.anthropic.chat import AnthropicConfig
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/llms/anthropic/chat/__init__.py", line 1, in <module>
++    from .handler import AnthropicChatCompletion, ModelResponseIterator
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/llms/anthropic/chat/handler.py", line 51, in <module>
++    from .transformation import AnthropicConfig
++File "/home/insomnia/miniconda/lib/python3.12/site-packages/litellm/llms/anthropic/chat/transformation.py", line 6, in <module>
++    from litellm.types.llms.anthropic import (
+
+# 2024-12-24 09:30:15.377029
++yes
+
+# 2024-12-24 09:30:44.963169
++yes update in all files
